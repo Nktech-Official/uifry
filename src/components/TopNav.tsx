@@ -12,7 +12,7 @@ const TopNav = () => (
       <li className="font-medium">Features</li>
     </ul>
 
-    <button className="w-44 h-12 md:flex absolute right-0 bg-black rounded text-white text-center hidden items-center justify-center">
+    <button className="w-44 h-12 md:flex absolute right-0 bg-black rounded text-white font-bold text-center hidden items-center justify-center">
       Download
     </button>
   </div>
