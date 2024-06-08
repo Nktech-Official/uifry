@@ -3,6 +3,7 @@ import React from "react";
 function Label() {
   return (
     <svg
+      className="max-w-[90%] md:max-w-none"
       xmlns="http://www.w3.org/2000/svg"
       width="569"
       height="427"

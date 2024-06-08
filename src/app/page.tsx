@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <main className="">
       <Hero />
-      <Features />
-      <FrequentlyAsked />
-      <Footer />
+      {/* <Features /> */}
+      {/* <FrequentlyAsked /> */}
+      {/* <Footer /> */}
     </main>
   );
 }
