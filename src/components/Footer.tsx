@@ -4,8 +4,8 @@ import Uifry from "./logo/Uifry";
 export default function Footer() {
   return (
     <>
-      <div className="container m-auto h-60 mt-44 flex justify-around">
-        <div className="w-44">
+      <div className="container mx-auto  mt-44 flex flex-col items-center lg:items-start lg:flex-row lg:h-60 lg:justify-around">
+        <div className="w-44 flex flex-col items-center lg:block">
           <Uifry />
           <div className="flex items-center mt-4">
             <svg
@@ -23,7 +23,7 @@ export default function Footer() {
             </svg>{" "}
             <p className="font-medium">help@Flybix.com</p>
           </div>
-          <div className="flex items-center mt-4 w-44">
+          <div className="flex items-center mt-4 w-44 ">
             <svg
               width="24"
               height="25"
@@ -43,7 +43,7 @@ export default function Footer() {
             <p className="font-medium">+1 234 456 678 89</p>
           </div>
         </div>
-        <div className="w-40">
+        <div className="w-full lg:w-40 text-center lg:text-start border-t-2 lg:border-0 pt-4 lg:pt-0 mt-4 lg:mt-0">
           <h1 className=" text-black text-[32px] font-medium font-['Clash Display'] capitalize leading-[42px]">
             links
           </h1>
@@ -60,7 +60,7 @@ export default function Footer() {
             <a href="">blog</a>
           </p>
         </div>
-        <div className="w-40">
+        <div className="w-full lg:w-40 text-center lg:text-start border-t-2 lg:border-0 pt-4 lg:pt-0 mt-4 lg:mt-0">
           <h1 className=" text-black text-[32px] font-medium font-['Clash Display'] capitalize leading-[42px]">
             legal
           </h1>
@@ -74,7 +74,7 @@ export default function Footer() {
             <a href="">cookie policy</a>
           </p>
         </div>
-        <div className="w-40">
+        <div className="w-full lg:w-40 text-center lg:text-start border-t-2 lg:border-0 pt-4 lg:pt-0 mt-4 lg:mt-0">
           <h1 className=" text-black text-[32px] font-medium font-['Clash Display'] capitalize leading-[42px]">
             products
           </h1>
@@ -88,14 +88,14 @@ export default function Footer() {
             <a href="">reviews</a>
           </p>
         </div>
-        <div className="w-40">
+        <div className="w-full lg:w-40 text-center lg:text-start border-t-2 lg:border-0 pt-4 lg:pt-0 mt-4 lg:mt-0">
           <h1 className=" text-black text-[32px] font-medium font-['Clash Display'] capitalize leading-[42px]">
             newsletter
           </h1>
           <p className="text-black ml-1 my-5 text-lg font-medium font-['Clash Display'] capitalize leading-relaxed underline hover:text-blue-700">
             stay up to date
           </p>
-          <form className="flex w-[400px]">
+          <form className="flex m-auto w-[80%] lg:w-[250px]">
             <input
               type="email"
               placeholder="Enter your email address"
@@ -112,7 +112,7 @@ export default function Footer() {
       </div>
       <hr className="border mt-[50px] container m-auto" />
       <div className="container m-auto h-[90px] flex justify-center items-center">
-        <p className="text-center font-medium text-2xl">
+        <p className="text-center font-medium text-lg sm:text-2xl">
           Copyright 2022 uifry.com all rights reserved
         </p>
       </div>

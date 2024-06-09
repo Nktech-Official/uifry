@@ -11,7 +11,7 @@ export default function FrequentlyAsked() {
         Frequently asked questions
       </p>
 
-      <div className="grid grid-cols-2 grid-rows-3 gap-4 mt-10">
+      <div className="grid grid-cols-1 gird-rows-6  sm:grid-cols-2 sm:grid-rows-3 gap-4 mt-10">
         {FAQ.map((faq, index) => (
           <FaqItem {...faq} index={index} key={index} />
         ))}
@@ -26,21 +26,28 @@ interface FaqItemProps extends faq {
 const FaqItem: React.FC<FaqItemProps> = ({ question, answer, index }) => {
   const rowIndex = Math.floor(index / 2); // Calculate row index
   const colIndex = index % 2; // Calculate column index
-  function getBackgroundColor(rowIndex: number, colIndex: number) {
+  function getBackgroundColorSm(rowIndex: number, colIndex: number) {
     if (rowIndex % 2 !== 0) {
       return colIndex % 2 === 0
-        ? { bg: "bg-white", text: "text-black" }
-        : { bg: "bg-[#FF5555]", text: "text-white" };
+        ? { bg: "sm:bg-white", text: "sm:text-black" }
+        : { bg: "sm:bg-[#FF5555]", text: "sm:text-white" };
     } else {
       return colIndex % 2 === 0
-        ? { bg: "bg-[#FF5555]", text: "text-white" }
-        : { bg: "bg-white", text: "text-black" };
+        ? { bg: "sm:bg-[#FF5555]", text: "sm:text-white" }
+        : { bg: "sm:bg-white", text: "sm:text-black" };
     }
   }
-  const color = getBackgroundColor(rowIndex, colIndex);
+  function getBackgroundColor(index: number) {
+    if (index % 2 === 0) return { bg: "bg-[#FF5555]", text: "text-white" };
+    return { bg: "bg-white", text: "text-black" };
+  }
+  const colorSm = getBackgroundColorSm(rowIndex, colIndex);
+  const color = getBackgroundColor(index);
 
   return (
-    <div className={`${color.bg} ${color.text} p-10 rounded-3xl `}>
+    <div
+      className={`${color.bg} ${color.text} ${colorSm.bg} ${colorSm.text} p-10 rounded-3xl `}
+    >
       <h1 className="text-3xl font-semibold font-['Clash Display'] capitalize leading-7">
         {question}
       </h1>

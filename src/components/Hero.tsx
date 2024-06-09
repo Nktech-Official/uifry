@@ -47,7 +47,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/2 h-[800px] m-auto w-full lg:block mt-[10px] lg:mt-0">
+        <div className="lg:w-1/2 h-[500px] sm:h-[600] md:h-[700px] m-auto w-full lg:block mt-[10px] lg:mt-0">
           <div className="relative h-full w-full">
             <Star4 className="absolute bottom-[50px] left-[120px]" />
             {/* <DotBasePhone className="absolute w-[500px] h-[765px] left-[40px] bottom-0" /> */}
