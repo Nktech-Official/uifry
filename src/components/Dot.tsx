@@ -1,8 +1,9 @@
 import React from "react";
 
-function Dot() {
+function Dot({ className }: { className?: string }) {
   return (
     <svg
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       width="517"
       height="430"

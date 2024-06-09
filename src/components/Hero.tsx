@@ -8,18 +8,17 @@ import DotBase from "@/assets/DotBase.png";
 import PhoneLast from "./PhoneLast";
 import PhoneMiddle from "./PhoneMiddle";
 import PhoneTop from "./PhoneTop";
-import DotBasePhone from "./DotBasePhone";
 import Image from "next/image";
 
 export default function Hero() {
   return (
     <div className="min-h-[calc(100vh - 80px) ">
       <Star1 className="absolute left-4 top-[100px]" />
-      <Star2 className="absolute right-[55px] top-[30px]" />
+      <Star2 className="absolute right-0 sm:right-[55px] top-[30px] md:top-[100px] md:right-[0px] lg:top-[30px] xl:right-[25px]" />
       <div className="flex container h-full m-auto flex-col lg:flex-row">
-        <div className="lg:w-1/2 w-full flex justify-start   relative">
-          <div className="absolute right-10 top-2 z-[-1]">
-            <Dot />
+        <div className="lg:w-1/2 w-full flex justify-start relative">
+          <div className="absolute top-[-100px] left-0 sm:left-[100px] sm:top-[-120px] lg:right-10 lg:top-2 z-[-1]">
+            <Dot className="w-[300px] lg:w-[517px]" />
           </div>
 
           <div className="ml-[30px] xl:ml-[30px] mt-[50px] lg:mt-[150px] w-full">
@@ -49,11 +48,10 @@ export default function Hero() {
         </div>
         <div className="lg:w-1/2 h-[500px] sm:h-[600] md:h-[700px] m-auto w-full lg:block mt-[10px] lg:mt-0">
           <div className="relative h-full w-full">
-            <Star4 className="absolute bottom-[50px] left-[120px]" />
-            {/* <DotBasePhone className="absolute w-[500px] h-[765px] left-[40px] bottom-0" /> */}
+            <Star4 className="absolute bottom-[80px] left-[80px] sm:bottom-[-30px] sm:left-[120px] md:bottom-[50px] " />
 
             <Image
-              className="absolute w-[40px] lg:w-[300px] lg:top-[200px] left-[80px] xl:w-[568px] xl:left-[110px] xl:top-[40px]"
+              className="absolute w-[300px] top-[100px] left-[50px] sm:w-[500px] sm:left-[80px] sm:top-[-40px] md:top-[100px] md:left-[150px] lg:w-[400px] lg:top-[200px] lg:left-[150px] xl:w-[568px] xl:left-[110px] xl:top-[40px]"
               alt="base"
               src={DotBase}
               width={568}

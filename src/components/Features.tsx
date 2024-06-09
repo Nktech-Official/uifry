@@ -9,7 +9,7 @@ export default function Features() {
     <>
       <div className=" mt-10 flex flex-col items-center md:flex-row">
         <div className="h-full w-full md:w-1/2 flex  justify-center relative">
-          <StarFeature className="absolute left-10 top-14" />
+          <StarFeature className="absolute left-[5px] sm:left-10 top-14" />
           <FeatureDot className="absolute z-[-1] lg:left-[30px] max-w-full" />
           <FeaturePhone className="w-[300px] h-[500px]" />
         </div>
@@ -105,7 +105,7 @@ export default function Features() {
       </div>
       <div className="mt-10 flex flex-col items-center md:flex-row-reverse">
         <div className="h-full w-full md:w-1/2 flex justify-center relative">
-          <StarFeature className="absolute left-10 top-14" />
+          <StarFeature className="absolute left-[5px] sm:left-10 top-14" />
           <FeatureDot className="absolute z-[-1] lg:left-[30px] max-w-full" />
           <AdvantagePhone className="w-[300px] h-[500px]" />
         </div>
@@ -154,7 +154,7 @@ export default function Features() {
       </div>
       <div className=" mt-10 flex flex-col items-center md:flex-row">
         <div className="h-full w-full md:w-1/2 flex justify-center relative">
-          <StarFeature className="absolute left-10 top-14" />
+          <StarFeature className="absolute left-[5px] sm:left-10 top-14" />
           <FeatureDot className="absolute z-[-1] lg:left-[30px] max-w-full" />
           <FeaturePhone className="w-[300px] h-[500px]" />
         </div>
