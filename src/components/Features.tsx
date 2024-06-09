@@ -7,13 +7,13 @@ import AdvantagePhone from "./AdvantangePhone";
 export default function Features() {
   return (
     <>
-      <div className=" mt-10 flex">
-        <div className="h-full w-1/2 flex justify-center relative">
+      <div className=" mt-10 flex flex-col items-center md:flex-row">
+        <div className="h-full w-full md:w-1/2 flex  justify-center relative">
           <StarFeature className="absolute left-10 top-14" />
-          <FeatureDot className="absolute z-[-1] left-[30px]" />
-          <FeaturePhone />
+          <FeatureDot className="absolute z-[-1] lg:left-[30px] max-w-full" />
+          <FeaturePhone className="w-[300px] h-[500px]" />
         </div>
-        <div className="h-full w-1/2 flex justify-center items-center">
+        <div className="h-full w-full md:w-1/2 flex justify-center items-center">
           <div className="h-5/6 w-5/6 ">
             <h3 className="text-[#FF5555] font-medium text-xl">FEATURES</h3>
             <h3 className="capitalize text-5xl font-bold mt-3">
@@ -103,19 +103,19 @@ export default function Features() {
           </div>
         </div>
       </div>
-      <div className="mt-10 flex flex-row-reverse">
-        <div className="h-full w-1/2 flex justify-center relative">
+      <div className="mt-10 flex flex-col items-center md:flex-row-reverse">
+        <div className="h-full w-full md:w-1/2 flex justify-center relative">
           <StarFeature className="absolute left-10 top-14" />
-          <FeatureDot className="absolute z-[-1] left-[30px]" />
-          <AdvantagePhone />
+          <FeatureDot className="absolute z-[-1] lg:left-[30px] max-w-full" />
+          <AdvantagePhone className="w-[300px] h-[500px]" />
         </div>
-        <div className="h-full w-1/2 flex justify-center items-center ">
-          <div className="h-5/6 w-4/6 ">
+        <div className="h-full w-full md:w-1/2 flex  justify-center items-center ">
+          <div className="h-5/6 w-5/6 ">
             <h3 className="text-[#FF5555] font-medium text-xl">ADVANTAGES</h3>
             <h3 className="capitalize text-5xl font-bold mt-3">
               Why Choose Uifry?
             </h3>
-            <div className="mt-14 w-5/6">
+            <div className="mt-14 ">
               <>
                 <h3 className="capitalize flex items-center ">
                   <svg
@@ -152,14 +152,14 @@ export default function Features() {
           </div>
         </div>
       </div>
-      <div className=" mt-10 flex">
-        <div className="h-full w-1/2 flex justify-center relative">
+      <div className=" mt-10 flex flex-col items-center md:flex-row">
+        <div className="h-full w-full md:w-1/2 flex justify-center relative">
           <StarFeature className="absolute left-10 top-14" />
-          <FeatureDot className="absolute z-[-1] left-[30px]" />
-          <FeaturePhone />
+          <FeatureDot className="absolute z-[-1] lg:left-[30px] max-w-full" />
+          <FeaturePhone className="w-[300px] h-[500px]" />
         </div>
-        <div className="h-full w-1/2 flex justify-center items-center ">
-          <div className="h-5/6 w-4/6 ">
+        <div className="h-full w-full md:w-1/2 flex justify-center items-center mb-20 ">
+          <div className="h-5/6 w-5/6 ">
             <div className="mt-14 w-5/6">
               <>
                 <h3 className="capitalize flex items-center ">

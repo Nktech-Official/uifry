@@ -1,8 +1,9 @@
 import React from "react";
 
-function FeaturePhone() {
+function FeaturePhone({ className }: { className?: string }) {
   return (
     <svg
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       width="450"
